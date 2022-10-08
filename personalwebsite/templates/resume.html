@@ -1,0 +1,170 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+     <title>William Sanzone Resume</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(static/images/noise.jpg); }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic {float: right;  margin: -30px 0 0 0; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: relative; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; height: 15px; }
+     </style>
+</head>
+
+<body>
+
+    <div id="page-wrap">
+    
+        <img src="static/images/myphoto.png" alt="Photo of Me" id="pic" />
+    
+        <div id="contact-info" class="vcard">
+        
+            <!-- Microformats! -->
+        
+            <h1 class="fn">William Sanzone</h1>
+        
+            <p>
+                Cell: <span class="tel">406-595-9548</span><br />
+                Email: <a class="email" href="mailto:wsanzoneds@gmail.com">wsanzoneds@gmail.com</a>
+            </p>
+        </div>
+                
+        <div id="objective">
+            <p>
+                I have a background in Civil/Environmental Engineering and have been working as a Project Engineer/Manager on 
+                large-scale construction projects for the last three years. I’m known as an self-starter and lifelong learner. 
+                I’m excited to work in the field of data primarily to do work that drives real business decision making.
+            </p>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt>Education</dt>
+            <dd>
+                <h2>BrainStation - Data Science Diploma  <span>Jul - Oct 2022</span></h2>
+            </dd>
+            <dd>
+                <h2> University of Colorado Boulder  <span>2015-2019</span></h2>
+                <p>Bachelor's of Science in Environmental Engineering</p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Projects</dt>
+            <dd>
+                <h2>Airbnb Host Score Prediction in New York City</h2>
+                <ul>
+                    <li>Used historical Airbnb data from New York City to accurately predict a host’s review score</li>
+                    <li>Uploaded model to an interactive web application that users could input their listing information and get a prediction of their review score</li>
+                    <li>Employed various machine learning models such as Decision Trees, Random Forests, XGBoost, and Neural Networks</li>
+                </ul>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Skills</dt>
+            <dd>
+                <h2>Technical Skills</h2>
+                <p>Python, R, SQL, Tableau, Pandas, Numpy, Hypothesis Testing, A/B Tests, Data Analysis, Matplotlib, 
+                    Plotly, Seaborn, Bokeh, Flask, Django, Git,
+                    Tensorflow, Keras, Pytorch, AWS, Hive, Hadoop, Spark, EDA, Stastical Analysis, Excel, Microsoft Office</p>
+
+                <h2>Soft Skills</h2>
+                <p>Collaboration, Teamwork, Leadership, Empathy, Time Management</p>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Work Experience</dt>
+            <dd>
+                <h2>Langlas and Associates  <span>Project Engineer - Bozeman, MT - 08/2020-04/2022</span></h2>
+                <ul>
+                    <li>Used Revit and Sketchup3D to model projects which helped to 
+                        streamline operations in the field and ensure quality control</li>
+
+                    <li>Created a system to better manage subcontractor and prime change 
+                        orders that was more efficient and easier to use than previous excel spreadsheets</li>
+
+                    <li>Managed a team of 20+ subcontractors in a collaborative environment while automating 
+                        tasks such as invoicing and preparing invoices for monthly bills</li>
+                </ul>
+                
+                <h2>Kiewit Infrastructure  <span>Field Engineer - Denver, CO - 09/2019-08/2020</span></h2>
+                <ul>
+                    <li>Worked with Trimble software tools to model future utility infrastructure</li>
+                    <li>Participated in drone surveying used to estimate material quantities on site</li>
+                    <li>Worked in a collaborative environment with people from all levels of the company hierarchy</li>
+                </ul> 
+
+                <h2>University of Colorado  <span>Researcher - Boulder, CO - 02/2018-05/2019</span></h2>
+                <ul>
+                    <li>Gained intermediate coding and technical analysis experience using MATLAB and other programming languages</li>
+                    <li>Frequently ran simulations in MATLAB to determine the amount of heat transport in groundwater using the adjoint function.</li>
+                    <li><a class="ml-2" href="https://ascelibrary.org/doi/abs/10.1061/9780784482346.015">Link to paper</a> </li>
+                </ul>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Volunteer Experience</dt>
+            <dd>
+                <h2>Big Sky Youth Empowerment<span>Mentor - Bozeman, MT - Fall 2021</span></h2>
+                <ul>
+                    <li>Helped at-risk youth create a safe space in the outdoors to explore their interests and passions.</li>
+                    <li>Collaborated directly with full time employees to ideate new lessons and activities for the participants</li>
+                </ul>
+
+                <h2>Engineers Without Borders<span>Project Lead - Boulder, CO - 04/2018-03/2019</span></h2>
+                <ul>
+                    <li>Acted as team lead running calculations and design for a potable water system in the Yby Katu community of Paraguay. </li>
+                    <li>Coordinated fundraising activites so students could travel to the community for project implementation.</li>
+                </ul>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Hobbies</dt>
+            <dd>Skiing, Hiking, Fly-fishing, Mountain Biking, Sewing, Reading, Cooking, Community Involvement</dd>
+
+            <dd class="clear"></dd>
+
+            <dt>References</dt>
+            <dd>Available upon request</dd>
+            
+            <dd class="clear"></dd>
+        </dl>
+        
+        <div class="clear"></div>
+    
+    </div>
+
+</body>
+
+
+    {% endblock content %}
+</html>

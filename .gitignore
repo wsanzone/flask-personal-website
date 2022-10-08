@@ -1,0 +1,7 @@
+.db
+.pyc
+.bash_profile
+.zshenv
+
+venv
+__pycache__

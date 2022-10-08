@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+        <article class="media content-section">
+          <div class="media-body">
+            <h1>Welcome to my Website!</h1>
+            <p class="content-section">This is my website built using flask and bootstrap. </p>
+            <div class="row">
+
+              <h2 class="article-title">Below are what some of the above links do:</h2>
+
+              <h5><a class="nav-item nav-link" href="{{ url_for('main.about') }}">About Me:</a></h5>
+                <p>This is a little bit about me and what I like to do outside of work. Here 
+                  you can find photos of my many hobbies and passions!
+                </p>
+              
+              <h5><a class="nav-item nav-link" href="{{ url_for('resume.resume_display') }}">My Resume</a></h5>
+                <p>Here you can find my digital resume. This was modeled after the C'thulhu One Page Resume from gonsie. Link can be found <a href="http://www.gonsie.com/Cthulu-Resume/">here.</a></p>
+              
+              <h5 class="nav-item nav-link">Projects </h5>
+                <ul>
+                  <li><a href="{{ url_for('projects.airbnb_project') }}" >Airbnb Host Score Prediction in NYC: </a>This was my capstone project for the BrainStation Data Science course. Right now it is just a static HTML file showing the Jupyter Notebook, but in the future I plan to make this an iteractive model right here on this website!</li>
+                  <li><a href="https://github.com/wsanzone/flask-personal-website">This Website! </a>This website was built using Flask and Bootstrap, all coded in Python. The link will bring you to my github repository with the source code.</li>
+                </ul>
+                
+              <h5><a class="nav-item nav-link" href="{{ url_for('contact.contactme') }}">Contact Me</a></h5>
+                <p>This is a contact form in which users can send messages to me. This form includes full authentication and utilizes the Flask Mail extension to send these requests to my personal email.</p>
+
+            </div>
+          </div>
+        </article>
+{% endblock content %}
