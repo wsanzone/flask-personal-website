@@ -21,4 +21,7 @@ python-decouple==3.6
 SQLAlchemy==1.4.41
 Werkzeug==2.0.3
 WTForms==3.0.1
+psycopg2-binary==2.9.4
+Flask-Migrate==2.7.0
+Flask-CLI==0.4.0
 
