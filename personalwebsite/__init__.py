@@ -22,7 +22,7 @@ def create_app(config_class=Config):
     connection = psycopg2.connect(url)
     db.init_app(app)
     mail.init_app(app)
-    #migrate.init_app(migrate)
+    migrate.init_app(app, db)
     with app.app_context():
         db.create_all()
 
