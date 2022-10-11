@@ -19,7 +19,7 @@ def create_app(config_class=Config):
     app.config.from_object(Config)
     # Imports all routes from the routes.py file
     url = os.environ.get('DATABASE')
-    connection = psycopg2.connect(url)
+    conn = psycopg2.connect(url, sslmode='require')
     db.init_app(app)
     mail.init_app(app)
     migrate.init_app(app, db)
