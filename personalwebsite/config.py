@@ -8,6 +8,7 @@ class Config:
     
     MAIL_SERVER = 'smtp.googlemail.com'
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get('EMAILUSERNAME')
