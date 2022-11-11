@@ -21,7 +21,7 @@ def contactme():
         def send_email(input): # FUNCTION TO SEND AN EMAIL WHEN THE CONTACT FORM IS FILLED OUT
 
             # MSG VARIABLE THAT HOLDS A GENERIC TITLE AND SENDER/RECIPIENT
-            msg = Message('Someone has Contacted You', sender='wsanzone@gmail.com', recipients=['wsanzoneds@gmail.com'])
+            msg = Message('Someone has Contacted You', sender='wsanzoneds@gmail.com', recipients=['wsanzoneds@gmail.com'])
             msg.body = f'''
 Name: {input.name}
 Email: {input.email}

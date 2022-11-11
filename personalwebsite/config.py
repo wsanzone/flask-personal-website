@@ -11,5 +11,8 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False # Removes errors when running the app locally
     MAIL_PORT = 587
     MAIL_USE_TLS = True
+
+    # The below returns a different error
+    #MAIL_USE_SSL = True
     MAIL_USERNAME = os.environ.get('EMAILUSERNAME') # email username for contact requests to be sent to
     MAIL_PASSWORD = os.environ.get('EMAILKEY') # email key so the contact messages can be sent
